@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Osa Bank</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-border">
+        <div>
+          <!-- <img
+            class="img-nav"
+            src="pawel-czerwinski-B_GEOp9u8h8-unsplash.jpg"
+          /> -->
+        </div>
+        <div class="log-in-page">
+          <p class="bank-name">Mybank</p>
+          <p class="welcm">sign up to get started</p>
+          <p class="special-cht special-update">
+            Password must not contain special character@$
+          </p>
+          <form class="log-in">
+            <label class="label-detail" for="username">Username</label>
+            <input class="nav-input-user" type="text" />
+            <label class="label-detail" for="username">Password</label>
+            <div class="password-wrapper">
+              <input class="nav-input-pin" type="password" />
+              <button type="button" class="eyes-pass">
+                <img src="eye-off-svgrepo-com.svg" class="eyes-close" />
+                <img src="eye-show-svgrepo-com.svg" class="eyes-open" />
+              </button>
+            </div>
+
+            <!-- <div id="error-signup" class="sig-up-error"></div> -->
+            <p id="error-signup" style="color: red; display: none"></p>
+            <p class="sign-up-message"></p>
+
+            <div class="password-error">
+              <p class="error-status">Password must contain the following!:</p>
+              <p class="capital-message">Password must have capital letter!</p>
+              <p class="small-message">Password must have small letter!</p>
+              <p class="number-message">Password must have numbers!</p>
+              <p class="length-message">Password minimum 8 characters!</p>
+            </div>
+            <button class="btn-sign-up" disabled>Sign Up</button>
+            <a class="log-in-link" href="login.html">log in</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,572 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.img-nav {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 0.6rem;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100vh;
+  background-image: url(radission-us-_XeQ8XEWb4Q-unsplash.jpg);
+  background-size: cover;
+}
+
+.login-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  height: 100vh;
+
+  background-image: url(miop4.jpg);
+  background-size: cover;
+}
+
+.login-border {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 0.313rem solid #777;
+  border: none;
+  border-radius: 0.6rem;
+
+  background-color: #f9f6f3;
+  width: 37.5rem;
+  height: 31.25rem;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nav-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.313rem solid #777;
+  border: none;
+  border-radius: 0.6rem;
+  background-color: #f9f6f3;
+  width: 31.25rem;
+  height: 31.25rem;
+  gap: 1rem;
+}
+
+.log-in {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.welcm {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.nav-input-user {
+  font-size: 1rem;
+  border-radius: 0.6rem;
+
+  border: 0.125rem solid #a3180e;
+  outline: none;
+
+  padding: 0.313rem 7rem 0.313rem 0.313rem;
+}
+
+.nav-input-pin {
+  font-size: 1rem;
+  border-radius: 0.6rem;
+
+  border: 2px solid #a3180e;
+  outline: none;
+  flex: 1;
+  padding: 0.313rem 7rem 0.313rem 0.313rem;
+}
+
+input::placeholder {
+  color: #d9d4d4;
+}
+
+.nav-input-user:hover,
+.nav-input-pin:hover,
+.login-input-user:hover,
+.login-input-pin:hover {
+  border-color: #8c1007;
+  box-shadow: 0 0 10px #8c1007;
+}
+
+.login-input-user {
+  font-size: 1rem;
+  border-radius: 0.6rem;
+  border: 2px solid #a3180e;
+  outline: none;
+  width: 322px;
+  padding: 0.313rem 1.25rem 0.313rem 0.6rem;
+}
+
+.login-input-pin {
+  font-size: 1rem;
+  border-radius: 0.6rem;
+  border: 2px solid #a3180e;
+  outline: none;
+  flex: 1;
+  padding: 0.313rem 2.3rem 0.313rem 0.6rem;
+}
+
+.password-wrapper {
+  display: flex;
+  /* flex: 1; */
+  position: relative;
+  width: 322px;
+  align-items: center;
+}
+
+.eyes-pass {
+  width: 40px;
+  height: 20px;
+  font-weight: 900;
+  margin-left: 87%;
+  position: absolute;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.eyes-close {
+  width: 30px;
+  height: 20px;
+}
+
+.eyes-open {
+  display: none;
+  width: 30px;
+  height: 20px;
+}
+
+.btn-sign-up {
+  border: none;
+  border-radius: 0.6rem;
+  outline: none;
+  cursor: pointer;
+  background-color: #8c1007;
+  color: #ffff;
+  padding: 0.625rem 0.938rem 0.625rem 0.938rem;
+  font-weight: 900;
+}
+
+.btn-login {
+  border: none;
+  border-radius: 0.6rem;
+  outline: none;
+  cursor: pointer;
+  background-color: #8c1007;
+  color: #ffff;
+  padding: 0.625rem 0.938rem 0.625rem 0.938rem;
+
+  font-weight: 900;
+}
+
+.btn-sign-up:hover,
+.btn-login:hover {
+  border-color: #8c1007;
+  box-shadow: 0 0 0.625rem #8c1007;
+}
+
+.bank-name {
+  text-align: center;
+  padding-bottom: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #8c1007;
+}
+
+.log-in-link {
+  text-align: center;
+  text-decoration: none;
+  color: #8c1007;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.log-in-link:hover {
+  color: #f9f6f3;
+  text-shadow: 0 0 0.625rem #8c1007, 0 0 1.25rem #8c1007;
+  transform: translateX(0.313rem);
+}
+
+.welcom-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.bank-name-2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #8c1007;
+}
+
+.welcom-back {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.balance {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 12rem;
+}
+
+.current-c {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #b3b0ae;
+}
+
+#account-balance {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.activities-c {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.activities-border {
+  border: 0.313rem solid #8c1007;
+  padding: 1.25rem;
+  margin: 1.25rem auto;
+  width: 90%;
+  border-radius: 0.5rem;
+}
+
+.account-summary {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.summary-status {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.account-btn1,
+.loan-btn,
+.close-btn {
+  display: flex;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.313rem 0.938rem;
+  border-radius: 0.313rem;
+  align-items: center;
+  background-color: #8c1007;
+}
+
+.bx-arrow-right-circle {
+  width: 30px;
+  color: #f9f6f3;
+}
+
+.summary-box {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.summary-input1,
+.loan-input,
+.close-input-pin,
+.close-input-user {
+  border: 2px solid #8c1007;
+  font-size: 12px;
+  font-weight: 400;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #8c1007;
+}
+
+.summary-input1,
+.close-input-pin::placeholder {
+  color: #2e2d2d;
+}
+
+.close-input-user::placeholder {
+  color: #2e2d2d;
+}
+.loan-input::placeholder {
+  color: #2e2d2d;
+}
+
+.summary-input1::placeholder {
+  color: #2e2d2d;
+}
+
+.summary-border {
+  background-color: #d4af37;
+  padding: 2rem 1.5rem;
+  border-radius: 5px;
+}
+
+.sort-con {
+  display: flex;
+  align-items: baseline;
+  margin-top: 3rem;
+  gap: 10px;
+}
+
+.sort-btn {
+  padding: 10px 15px 10px 15px;
+  margin-right: 1.875rem;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  background: none;
+}
+
+.sort-amount-1 {
+  color: #8fd14f;
+  font-size: 1.2rem;
+  margin-right: 2.5rem;
+}
+
+.sort-amount-2 {
+  color: #8fd14f;
+  font-size: 1.2rem;
+  margin-right: 1.5rem;
+}
+
+.sort-amount-3 {
+  color: #e62727;
+  font-size: 1.2rem;
+}
+
+/* TRANSACTION */
+.transacion-status {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  background-color: #f9f6f3;
+  border-radius: 1rem;
+
+  width: 560px;
+
+  padding: 10px 10px 10px 10px;
+  padding-left: 10px;
+}
+
+.transaction-date {
+  color: grey;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.transaction-type {
+  font-size: 1rem;
+}
+
+.transaction-amount.debit {
+  font-weight: bold;
+  color: red;
+}
+
+.transaction-amount.credit {
+  font-weight: bold;
+  color: green;
+}
+
+.transaction-balance {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.transaction-con {
+  align-items: center;
+
+  overflow: scroll;
+  gap: 10rem;
+
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.transaction-amount {
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+
+.transaction-deposit {
+  font-size: 1.1rem;
+}
+
+.transaction-type {
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+
+.transaction-border {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #777;
+  background: #fff;
+  border-radius: 10px;
+  border-bottom: 1px solid #eee;
+  padding: 1rem;
+}
+/* TRANSACTION END */
+
+.label-detail {
+  font-weight: 600;
+}
+
+.password-error {
+  background-color: #fdfff6;
+  width: 300px;
+  padding: 5px 5px 5px 5px;
+  border: 2px solid #8c1007;
+  border-radius: 5px;
+  display: none;
+}
+
+.small-message,
+.number-message,
+.capital-message,
+.length-message {
+  font-size: 10px;
+  display: none;
+  /* color: red; */
+}
+
+.special-cht {
+  font-size: 10px;
+}
+
+.special-update {
+  border: 2px solid red;
+  background-color: #fdfff6;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: black;
+}
+.special-update.pass {
+  color: green;
+}
+.special-update.not {
+  color: red;
+}
+
+.pass {
+  color: green;
+}
+
+.not {
+  color: red;
+}
+
+.error-status {
+  display: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.put-password {
+  font-size: 10px;
+  font-weight: 600;
+  color: red;
+}
+
+.sign-up-message {
+  font-size: 10px;
+  font-weight: 600;
+  color: red;
+}
+
+.log-out-con {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.log-out-sv {
+  width: 30px;
+}
+.log-out-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#username-message {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #740c04;
+  padding-left: 5px;
+}
+
+.sig-up-error {
+  color: red;
+  font-size: 14px;
+  font-weight: 500;
+
+  display: none;
+}
+
+.btn-sign-up:disabled {
+  background-color: grey;
+  filter: blur(1px);
+  cursor: not-allowed;
+}
+
+#history-btn {
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #8c1007;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
+  </head>
+  <body>
+    <section class="login-section">
+      <div class="login-border">
+        <p class="bank-name">Mybank</p>
+        <p class="welcm">Log in to continue</p>
+        <form class="form-input">
+          <label class="label-detail" for="username">Username</label>
+          <input type="text" class="login-input-user" />
+          <label class="label-detail" for="password">Password</label>
+          <div class="password-wrapper">
+            <input type="password" class="login-input-pin" />
+
+            <button type="button" class="eyes-pass">
+              <img src="eye-off-svgrepo-com.svg" class="eyes-close" />
+              <img src="eye-show-svgrepo-com.svg" class="eyes-open" />
+            </button>
+          </div>
+          <p class="put-password"></p>
+          <div class="password-error">
+            <p class="error-status">Password must contain the following!:</p>
+            <p class="capital-message">Password must have capital letters!</p>
+            <p class="small-message">Password must have small letter!</p>
+            <p class="number-message">Password must have number!</p>
+            <p class="length-message">Password minimum 8 characters!</p>
+            <p class="special-cht">Special characters are not allowed!</p>
+          </div>
+
+          <button class="btn-login">Log in</button>
+          <a class="log-in-link" href="index.html">Sign up</a>
+        </form>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

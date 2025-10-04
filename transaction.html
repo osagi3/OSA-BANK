@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>transaction</title>
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
+  </head>
+  <body>
+    <section class="welcom-con">
+      <p class="bank-name-2">Welcome,<span id="username-message"></span></p>
+      <div class="log-out-con">
+        <p class="welcom-back">Logout</p>
+        <button class="log-out-btn">
+          <img class="log-out-sv" src="logout-svgrepo-com.svg" />
+        </button>
+      </div>
+    </section>
+    <section class="balance">
+      <p class="activities-c">Activities</p>
+      <div class="balance-summary">
+        <p class="current-c">Current Balance</p>
+        <p id="account-balance">Balance: $0</p>
+      </div>
+    </section>
+    <section class="activities-border">
+      <div class="account-summary">
+        <div class="summary-border">
+          <p class="summary-status">Transfer money</p>
+          <div class="summary-box">
+            <!-- <select
+              class="summary-input"
+              type="text"
+              placeholder="transfer to"
+          </select> -->
+            <select class="summary-input1" id="reciever"></select>
+            <input
+              class="summary-input1"
+              type="number"
+              placeholder="amount"
+              id="amount"
+            />
+            <button class="account-btn1" id="transferbtn">
+              <i class="bxr bx-arrow-right-circle"></i>
+            </button>
+          </div>
+        </div>
+        <div>
+          <div class="summary-border">
+            <p class="summary-status">Request loan</p>
+            <div class="summary-box">
+              <input class="loan-input" type="number" placeholder="amount" />
+              <button class="loan-btn">
+                <i class="bxr bx-arrow-right-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="summary-border">
+          <p class="summary-status">Close account</p>
+          <div class="summary-box">
+            <input
+              class="close-input-user"
+              type="text"
+              placeholder="Confirm user"
+            />
+            <input
+              class="close-input-pin"
+              type="text"
+              placeholder="Confirm pin"
+            />
+            <button class="close-btn">
+              <i class="bxr bx-arrow-right-circle"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <section class="sort-con">
+        <button class="sort-btn">&uparrow;SORT</button>
+        <p class="sort-detl">interest</p>
+        <p class="sort-amount-1">₦15,000,000</p>
+        <p class="sort-detl">in</p>
+        <p class="sort-amount-2">₦12,650,000</p>
+        <p class="sort-detl">out</p>
+        <p class="sort-amount-3">₦2,000,000</p>
+      </section>
+      <!-- <section class="transaction-big-side"> -->
+      <div class="transaction-con">
+        <button id="history-btn">Show Transaction History</button>
+        <div class="transacion-status" style="display: hidden">
+          <!-- <div class="transaction-border"> -->
+          <!-- <p class="transaction-date"></p> -->
+          <!-- <p class="transaction-type"></p> -->
+          <!-- <p class="transaction-amount debit"></p> -->
+          <!-- <p class="transaction-balance"></p> -->
+          <!-- </div> -->
+        </div>
+      </div>
+      <!-- <div>
+          <label for="reciever">Send money to:</label>
+          <select id="reciever">
+            <option>wisdom</option>
+            <option>danny</option>
+            <option>tola</option>
+            <option>tife</option>
+          </select>
+        </div> -->
+      <!-- </section> -->
+    </section>
+
+    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
